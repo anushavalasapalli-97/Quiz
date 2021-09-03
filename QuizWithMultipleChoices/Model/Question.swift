@@ -8,12 +8,15 @@
 
 import Foundation
 
+
 struct Question {
     var question: String
-    var answer: String
+    var answers: [String]
+    var correctAnswer: String
     
-    init(q:String,a:String) {
+    init(q:String,a:[String],ca:String) {
         question = q
-        answer = a
+        answers = a
+        correctAnswer = ca
     }
 }
